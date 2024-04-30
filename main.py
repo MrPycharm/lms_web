@@ -235,7 +235,7 @@ class TimelineWindow(QMainWindow):  # вывод информации (main)
 
 
 def main():
-    application = Application.builder().token('7147157442:AAEvLGRBwGTidLOh-TmLuoqO2MLeL-uhNxQ').build()
+    application = Application.builder().token('TOKEN').build()
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler('add', add)],
         states={
